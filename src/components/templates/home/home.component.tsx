@@ -1,12 +1,10 @@
-import { Header, HomeContainer } from './home.styled';
-import Input from '@/components/atoms/input/input.component';
-import { REGEX_CITY } from '@/constants';
+import { HomeContainer } from './home.styled';
+import { HomeTemplateProps } from '@/types/components/templates/home.type';
 
-export default function HomeTemplate() {
+export default function HomeTemplate({ children }: HomeTemplateProps) {
   return (
     <HomeContainer>
-      <Header>Solvedex Weather App</Header>
-      <Input onChange={(value) => console.log(value)} placeholder='Search Here' regex={REGEX_CITY} type='text' isRequired ></Input>
+      {children}
     </HomeContainer>
   )
 }

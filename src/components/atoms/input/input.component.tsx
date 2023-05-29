@@ -4,12 +4,15 @@ import { ChangeEvent } from 'react';
 
 export default function Input({ placeholder, regex, isRequired, type, onChange }: InputProps) {
 
-  const handleChange = ({ target: { value } }: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    const value = event.target.value;
+    event.preventDefault();
     onChange(value);
   }
 
   return (
     <MainInput
+      data-test-target="input:city"
       placeholder={placeholder}
       pattern={regex}
       required={isRequired}

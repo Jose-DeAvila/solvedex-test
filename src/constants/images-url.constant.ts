@@ -1,0 +1,11 @@
+export const TRUNDER_IMAGE_URL = '/media/images/thunder.png';
+export const RAIN_IMAGE_URL = '/media/images/rain.png';
+export const SUNNY_RAIN_IMAGE_URL = '/media/images/sunny-rain.png';
+export const SNOWY_IMAGE_URL = '/media/images/snowy.png';
+export const TORNADO_IMAGE_URL = '/media/images/typhoon.png';
+export const SUNNY_IMAGE_URL = '/media/images/sunny.svg';
+export const SUNNY_WITH_CLOUD_IMAGE_URL = '/media/images/sunny-with-cloud.png';
+export const BASIC_CLOUD_IMAGE_URL = '/media/images/cloudy.svg';
+export const DARK_CLOUD_IMAGE_URL = '/media/images/cloudny-night-2.png';
+export const NO_IMAGE_URL = '/media/images/folded-map.png';
+export const LOADING_IMAGE_URL = '/media/images/map-search.svg';

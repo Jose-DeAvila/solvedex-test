@@ -20,6 +20,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "forceConsistentCasingInFileNames": true,
+    "types": [
+      "cypress",
+    ],
     "paths": {
       "@/*": [
         "./src/*"
@@ -45,7 +48,8 @@
     }
   },
   "include": [
-    "src"
+    "src",
+    "cypress/e2e/complete-flow.spec.cy.ts"
   ],
   "references": [
     {
