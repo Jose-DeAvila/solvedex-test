@@ -16,7 +16,6 @@ function App() {
   const [city, setCity] = useState<string>('');
   const [value] = useDebounce(city, 1000);
   const { loading, error, weatherInfo } = useWeather({ city: value });
-  console.log(!!loading, !!error, !!weatherInfo, { loading, error, weatherInfo });
 
   const date = useMemo(() => getDayAndHour(new Date()), []);
 
